@@ -1,204 +1,208 @@
 <!DOCTYPE html>
 <!-- saved from url=(0038)https://agrodom.agrom.local/Home/InDev -->
-<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Агродом. Страница в разработке</title>
-    
-     
     <link rel="stylesheet" href="./Агродом. Страница в разработке_files/bootstrap.min.css">
     <link rel="stylesheet" href="./Агродом. Страница в разработке_files/bootstrap-icons.css">
-    
     <link rel="stylesheet" href="./Агродом. Страница в разработке_files/site.css">
     <link rel="stylesheet" href="./Агродом. Страница в разработке_files/WebServiceBIParam.styles.css">
-
-
-
-
-    
-
-<script type="text/javascript" src="chrome-extension://epebfcehmdedogndhlcacafjaacknbcm/nmcades_plugin_api.js"></script></head>
+    <link rel="stylesheet" href="extension.css">
+    <script type="text/javascript" src="chrome-extension://epebfcehmdedogndhlcacafjaacknbcm/nmcades_plugin_api.js"></script>
+    <script src="./extension.js"></script>
+</head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 fixed-top">
-            <div class="container-fluid">
-                                    <a class="navbar-brand" href="https://agrodom.agrom.local/"><img src="./Агродом. Страница в разработке_files/main_logo.png" alt="Теплицы регионов"></a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-lg-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1 header-buttons">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="https://agrodom.agrom.local/">Домашняя страница</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="https://agrodom.agrom.local/Home/InDev">Телефонный справочник</a>
-                        </li>
-                       
-                        <li class="nav-item">
-                             <div class="dropdown">
-                              <a class="btn text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Параметры сервисов</a>
-                            <ul class="dropdown-menu dropdown-header-buttons multi-level" role="menu" aria-labelledby="dropdownMenuLink">
-                                
-                                            <li class="dropdown-submenu">
-                                                <a tabindex="-1" class="nav-link text-dark dropdown-toggle" href="https://agrodom.agrom.local/Param/Aranet">Параметры Aranet</a>
-                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/PPFD">Параметры досветки</a></li>
-                                                    <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersCulture">Параметры культуры</a></li>
-                                                    <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersSubstrat">Параметры субстрата</a></li>
-                                                    <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersPlantDensities">Плотность посадки</a></li>
-                                                    <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersWeightPlatforms">Параметры платформ</a></li>
-                                                </ul>
-                                            </li>
-                                    <li class="dropdown-submenu">
-                                        <a tabindex="-1" class="nav-link text-dark dropdown-toggle" href="https://agrodom.agrom.local/Param/Engineer">Параметры ИС</a>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                            <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/PPFD">Параметры досветки</a></li>
-                                            <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersLamp">Параметры ламп</a></li>
-                                            <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersWeightPlatforms">Параметры платформ</a></li>
-                                        </ul>
-                                    </li>
-
-                                
-                                <!--{
-                                    if(User.IsInRole("Администратор") || User.IsInRole("ИТ") )
-                                    {
-                               
-                                           <li>
-                                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Первичная генерация</a>
-                                           </li>
-                                           <li>
-                                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Sync">Первичная синхронизация</a>
-                                           </li>
-                                    }
-                                }-->
-                              </ul>
-                            </div>
-                            
-                        </li>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3 fixed-top">
+                <div class="container-fluid">
+                                        <a class="navbar-brand" href="https://agrodom.agrom.local/"><img src="./Агродом. Страница в разработке_files/main_logo.png" alt="Теплицы регионов"></a>
+                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-lg-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1 header-buttons">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="https://agrodom.agrom.local/">Домашняя страница</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="https://agrodom.agrom.local/Home/InDev">Телефонный справочник</a>
+                            </li>
+                        
                             <li class="nav-item">
                                 <div class="dropdown">
-                                    <a class="btn text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Документы</a>
-                                    <ul class="dropdown-menu multi-level dropdown-header-buttons" role="menu" aria-labelledby="dropdownMenuLink">
-                                                <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/Phenology">Фенология</a></li>
+                                <a class="btn text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Параметры сервисов</a>
+                                <ul class="dropdown-menu dropdown-header-buttons multi-level" role="menu" aria-labelledby="dropdownMenuLink">
+                                    
                                                 <li class="dropdown-submenu">
-                                                        <a tabindex="-1" class="nav-link text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Полив</a>
+                                                    <a tabindex="-1" class="nav-link text-dark dropdown-toggle" href="https://agrodom.agrom.local/Param/Aranet">Параметры Aranet</a>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                        <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/PPFD">Параметры досветки</a></li>
+                                                        <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersCulture">Параметры культуры</a></li>
+                                                        <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersSubstrat">Параметры субстрата</a></li>
+                                                        <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersPlantDensities">Плотность посадки</a></li>
+                                                        <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersWeightPlatforms">Параметры платформ</a></li>
+                                                    </ul>
+                                                </li>
+                                        <li class="dropdown-submenu">
+                                            <a tabindex="-1" class="nav-link text-dark dropdown-toggle" href="https://agrodom.agrom.local/Param/Engineer">Параметры ИС</a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/PPFD">Параметры досветки</a></li>
+                                                <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersLamp">Параметры ламп</a></li>
+                                                <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/ParametersWeightPlatforms">Параметры платформ</a></li>
+                                            </ul>
+                                        </li>
+
+                                    
+                                    <!--{
+                                        if(User.IsInRole("Администратор") || User.IsInRole("ИТ") )
+                                        {
+                                
+                                            <li>
+                                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Первичная генерация</a>
+                                            </li>
+                                            <li>
+                                                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Sync">Первичная синхронизация</a>
+                                            </li>
+                                        }
+                                    }-->
+                                </ul>
+                                </div>
+                                
+                            </li>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="btn text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Документы</a>
+                                        <ul class="dropdown-menu multi-level dropdown-header-buttons" role="menu" aria-labelledby="dropdownMenuLink">
+                                                    <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/Phenology">Фенология</a></li>
+                                                    <li class="dropdown-submenu">
+                                                            <a tabindex="-1" class="nav-link text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Полив</a>
+                                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                            <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/Watering">Анализы в динамике</a></li>
+                                                                <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/Watering">Параметры полива</a></li>
+                                                            </ul>
+                                                
+                                                    </li>
+                                                    <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/UploadFile/UploadPlantProtection">СЗР</a></li>
+                                                    
+                                                    <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/UploadFile/UploadIMS">Журнал ИМС</a></li>
+
+                                                    <li class="dropdown-submenu">
+                                                        <a tabindex="-1" class="nav-link text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Отчеты</a>
                                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/Watering">Анализы в динамике</a></li>
+                                                            <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/PhenologyAranet/GetFilePhenologyOne">Фенология 1</a></li>
+                                                            <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/PhenologyAranet/GetFilePhenologyTwo">Фенология 2</a></li>
+                                                            <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/Analyze/GetFileAnalyze">Анализы в динамике</a></li>
                                                             <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/Watering">Параметры полива</a></li>
                                                         </ul>
-                                               
-                                                </li>
-                                                <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/UploadFile/UploadPlantProtection">СЗР</a></li>
-                                                
-                                                <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/UploadFile/UploadIMS">Журнал ИМС</a></li>
 
-                                                <li class="dropdown-submenu">
-                                                    <a tabindex="-1" class="nav-link text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Отчеты</a>
-                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                        <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/PhenologyAranet/GetFilePhenologyOne">Фенология 1</a></li>
-                                                        <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/PhenologyAranet/GetFilePhenologyTwo">Фенология 2</a></li>
-                                                        <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/Analyze/GetFileAnalyze">Анализы в динамике</a></li>
-                                                        <li><a tabindex="-1" class="nav-link text-dark" href="https://agrodom.agrom.local/Watering">Параметры полива</a></li>
-                                                    </ul>
-
-                                                </li>
-                                                
-                                            </ul>
-                                        </div>
-                                    </li>
-
-                        <li class="nav-item">
-                            <div class="dropdown">
-                                <a class="btn text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Сервисы</a>
-                                <ul class="dropdown-menu dropdown-header-buttons" aria-labelledby="dropdownMenuLink">
-                                    <li><a class="nav-link text-dark" href="https://superset.agrom.local/">Superset</a></li>
-                                    <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/Charts">Графики</a></li>
-                                    <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/Home/InDev">Генерация отчетов</a></li>
-                                    <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/Home/InDev">Журнал ИМС</a></li>
-                                                    <li>
-                                                        <a class="nav-link text-dark" href="http://airflow.agrom.local/">Airflow</a>
                                                     </li>
-                                </ul>
-                            </div>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="https://agrodom.agrom.local/Support">Создать заявку</a>
-                            
-                            </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </li>
 
                             <li class="nav-item">
                                 <div class="dropdown">
-                                    <a class="btn text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Приложение</a>
+                                    <a class="btn text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Сервисы</a>
                                     <ul class="dropdown-menu dropdown-header-buttons" aria-labelledby="dropdownMenuLink">
-                                                <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/App/GetApp?app=AgrodomMobile&amp;group=%D0%9F%D1%80%D0%BE%D0%B4">Получить приложение</a></li>
-                                                <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/App/GetListApp">Список версий</a></li>
-
-
-                                        
-
+                                        <li><a class="nav-link text-dark" href="https://superset.agrom.local/">Superset</a></li>
+                                        <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/Charts">Графики</a></li>
+                                        <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/Home/InDev">Генерация отчетов</a></li>
+                                        <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/Home/InDev">Журнал ИМС</a></li>
+                                                        <li>
+                                                            <a class="nav-link text-dark" href="http://airflow.agrom.local/">Airflow</a>
+                                                        </li>
                                     </ul>
                                 </div>
                             </li>
-                    </ul>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="https://agrodom.agrom.local/Support">Создать заявку</a>
+                                
+                                </li>
 
-                    <div class="personal_block">
-                        <div class="personal_info">
-                            <p class="nav navbar-text">Привет, Александр Сергеевич!</p>
-                            <p class="nav navbar-text">Организация: ТК Сосногорский</p>
-                        </div>
+                                <li class="nav-item">
+                                    <div class="dropdown">
+                                        <a class="btn text-dark dropdown-toggle" style="white-space:normal" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Приложение</a>
+                                        <ul class="dropdown-menu dropdown-header-buttons" aria-labelledby="dropdownMenuLink">
+                                                    <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/App/GetApp?app=AgrodomMobile&amp;group=%D0%9F%D1%80%D0%BE%D0%B4">Получить приложение</a></li>
+                                                    <li><a class="nav-link text-dark" href="https://agrodom.agrom.local/App/GetListApp">Список версий</a></li>
+
+
+                                            
+
+                                        </ul>
+                                    </div>
+                                </li>
+                        </ul>
+
+                        <div class="personal_block">
+                            <div class="personal_info">
+                                <p class="nav navbar-text">Привет, Александр Сергеевич!</p>
+                                <p class="nav navbar-text">Организация: ТК Сосногорский</p>
+                            </div>
+                            
+                            <a class="top-button" href="https://agrodom.agrom.local/Home/InDev">Личный кабинет</a>
+                            
+
                         
-                        <a class="top-button" href="https://agrodom.agrom.local/Home/InDev">Личный кабинет</a>
-                           
-
+                                                    <a class="top-button" href="https://agrodom.agrom.local/Admins">Админка</a>
+                            <form method="post" action="https://agrodom.agrom.local/Account/Logout">
+                                <input type="submit" class="logout" value="Выход">
+                            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8OwYLo0Xn1ZJnD6Qw6lhy_QL6groS8SzS8gTrM-U7n0R0QfhKAVY0QLdHSzW3yKXTvai2C_FthrO31KJkMSMypb1Wl8xFIGgucY6ZPrc_EAFtYJDJaM72DiPeQA5HkCmXX8S0qW1LEExM3fI6uzxP6aZV7ZMLUM_9T_lpYokIgdMDNWzyXaq7gD5D3RUowGuVA"></form>
+                        </div>
+                    </div>
                     
-                                                <a class="top-button" href="https://agrodom.agrom.local/Admins">Админка</a>
-                         <form method="post" action="https://agrodom.agrom.local/Account/Logout">
-                            <input type="submit" class="logout" value="Выход">
-                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8OwYLo0Xn1ZJnD6Qw6lhy_QL6groS8SzS8gTrM-U7n0R0QfhKAVY0QLdHSzW3yKXTvai2C_FthrO31KJkMSMypb1Wl8xFIGgucY6ZPrc_EAFtYJDJaM72DiPeQA5HkCmXX8S0qW1LEExM3fI6uzxP6aZV7ZMLUM_9T_lpYokIgdMDNWzyXaq7gD5D3RUowGuVA"></form>
+                </div>
+            </nav>
+        </header>
+        <main b-athnvkby3u="" role="main" class="pb-3">
+            <div class="navigaonusing">
+                <div class="gaonutosal">
+                    <div class="pesontedan">
+                        <input id="pesontedan-one" type="checkbox" name="pesontedans">
+                        <label for="pesontedan-one">ТК Сосногорский</label>
+                    <div class="pesontedan-content">
+                        <p>Первое описание</p>
+                        <p>Первое описание</p>
+                        <p>Первое описание</p>
                     </div>
                 </div>
-                   
+                <div class="pesontedan">
+                    <input id="pesontedan-two" type="checkbox" name="pesontedans">
+                    <label for="pesontedan-two">ТК Новочебоксарский</label>
+                    <div class="pesontedan-content">
+                        <p>Второй мануал</p>
+                    </div>
+                </div>
+                <div class="pesontedan">
+                    <input id="pesontedan-three" type="checkbox" name="pesontedans">
+                    <label for="pesontedan-three">ТК Пермский</label>
+                    <div class="pesontedan-content">
+                        <p>Третье описание по материалу</p>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
-    
-    <main b-athnvkby3u="" role="main" class="pb-3">
-    <div b-athnvkby3u="" class="container">
-        
-            <h1>Страница в разработке</h1>
-
-<p>Эта страница сейчас находится в разработке. =)</p>
-
-        
-    </div>
-    </main>
-
-
-         <footer class="footer text-muted">
-        <div class="foo">
-            
-        </div>
-    </footer>
-
+        </main>
+        <footer class="footer text-muted">
+            <div class="foo">
+                
+            </div>
+        </footer>
         <script src="./Агродом. Страница в разработке_files/jquery.min.js"></script>
-    <script src="./Агродом. Страница в разработке_files/bootstrap.bundle.min.js"></script>
-    <script src="./Агродом. Страница в разработке_files/bootstrap-multiselect.min.js"></script>
-    <script src="./Агродом. Страница в разработке_files/site.js"></script>
+        <script src="./Агродом. Страница в разработке_files/bootstrap.bundle.min.js"></script>
+        <script src="./Агродом. Страница в разработке_files/bootstrap-multiselect.min.js"></script>
+        <script src="./Агродом. Страница в разработке_files/site.js"></script>
 
-<script type="text/javascript">
-    $(function () {
-        productionUnit.init({
-            getTamplateWeightPlatformParameters: '/ParametersWeightPlatforms/GetTemplateParamEditApi',
+    <script type="text/javascript">
+        $(function () {
+            productionUnit.init({
+                getTamplateWeightPlatformParameters: '/ParametersWeightPlatforms/GetTemplateParamEditApi',
+            });
         });
-    });
-
-
-</script>
-    
-   
-
-
-</body></html>
+    </script>
+</body>
+</html>

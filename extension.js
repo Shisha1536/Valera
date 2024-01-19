@@ -1,0 +1,1 @@
+const pesontedan = document.querySelectorAll(".pesontedan");

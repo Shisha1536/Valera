@@ -14,9 +14,10 @@
 .name-TK,
 .name-podr,
 .name-sotr {
-  border: 1px solid #68e268;
+  border: 1px solid #04AA6D;
   border-radius: 15px;
-  background-color: #68e268;
+  background-color: #04AA6D;
+  color: #FFFFFF;
 }
 summary { 
   display: block;
